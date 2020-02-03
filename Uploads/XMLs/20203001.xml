@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<users-data country="IN" lang="en" date-produced="20200130">
+  <user-detail>
+    <user-code>U002</user-code>
+    <first-name>Tailor</first-name>
+    <last-name>Keitch</last-name>
+    <email>tailor@mail.com</email>
+    <addressbook>
+      <addressline1>2 Simei Street 3 #09-00</addressline1>
+      <addressline2></addressline2>
+      <country>Singapore</country>
+      <state></state>
+      <city></city>
+      <postcode>529889</postcode>
+    </addressbook>
+  </user-detail>
+  <user-detail>
+    <user-code>U001</user-code>
+    <first-name>Cathe</first-name>
+    <last-name>Tortis</last-name>
+    <email>cathe@mail.com</email>
+    <addressbook>
+      <addressline1>BD. 1 DECEMBRIE 1918</addressline1>
+      <addressline2>MUREs, 540447</addressline2>
+      <country>Romania</country>
+      <state>Targu Mures</state>
+      <city>Targu Mures</city>
+      <postcode>540447</postcode>
+    </addressbook>
+  </user-detail>
+  <user-detail>
+    <user-code>U003</user-code>
+    <first-name>Curtis</first-name>
+    <last-name>Laible</last-name>
+    <email>curtis@mail.com</email>
+    <addressbook>
+      <addressline1>83 McGlynn Place Way</addressline1>
+      <addressline2></addressline2>
+      <country>Malaysia</country>
+      <state></state>
+      <city></city>
+      <postcode></postcode>
+    </addressbook>
+  </user-detail>
+</users-data>

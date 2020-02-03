@@ -1,0 +1,37 @@
+{
+  "DatabaseConfiguration": {
+    "Stage": {
+      "ServerName": "J2ML-001",
+      "DatabaseName": "AutomationDb",
+      "UserName": "sa",
+      "Password": "sqlserver2012",
+      "ApplicationName": "Powershell.AutomationSystem"
+    },
+    "Production": {
+      "ServerName": "J2ML-001",
+      "DatabaseName": "AutomationDb",
+      "UserName": "sa",
+      "Password": "sqlserver2012",
+      "ApplicationName": "Powershell.AutomationSystem"
+    }
+  },
+  "Resources": {
+    "IsDataTable": true,
+    "BatchSize": 50,
+    "UploadPath": "\\Uploads",
+    "LogPath": "\\Uploads\\Logs",
+    "XmlPath": "\\Uploads\\Xmls",
+    "ConfigJsonPath": "\\Modules\\Config.json",
+    "DateFormat": "yyyyMMdd",
+    "DefaultDateTimeFormat": "dd MMMM yyyy hh:mm:ss",
+    "FullDateTimeFormat": "dd/MM/yyyy HH:mm:ss.fff",
+    "DisplayTimeFormat": "HH:mm:ss.fff",
+    "SQLDateTimeFormat": "yyyy-MM-dd HH:mm:ss"
+  },
+  "DatabaseTable": {
+    "UsersTable": "UsersTable"
+  },
+  "StoreProcedure": {
+    "UpdateUsersTable": "UpdateUsersTable"
+  }
+}
