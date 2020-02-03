@@ -6,6 +6,12 @@
         Start the Process for XML files.
 #> 
 function Start-AutomationProcess() {
+    Param(
+        [Parameter(Mandatory = $true, Position = 0)]
+        $XmlFolderPath,
+        [Parameter(Mandatory = $true, Position = 1)]
+        $Name
+    )
     Begin {
         Clear-Host
 
@@ -20,9 +26,9 @@ function Start-AutomationProcess() {
         $totalFileProcessCount = 0;
         $isAllSave = $true;
 
-        $xmlFolderPath = $Global:RootPath + $Global:Resources.XmlPath;
-        $userTextFilePath = Get-LastOrDefault (Create-File -FolderPath $xmlFolderPath -FileName "users.txt");
-        Write-FilePathsFromDirectory -FolderPath $xmlFolderPath -FilePath $userTextFilePath -Filter '*.xml'
+        # $XmlFolderPath = $Global:RootPath + $Global:Resources.XmlPath;
+        $userTextFilePath = Get-LastOrDefault (Create-File -FolderPath $XmlFolderPath -FileName "$Name.txt");
+        Write-FilePathsFromDirectory -FolderPath $XmlFolderPath -FilePath $userTextFilePath -Filter '*.xml'
 
         Get-Content $userTextFilePath | ForEach-Object {
             $xmlFilePath = $_;
@@ -53,7 +59,10 @@ function Start-AutomationProcess() {
 
             Write-LogInfo -Message "Save the remaining table data from object of $($Resources.XmlBatchSize)" -Separator $true
         }
+        Write-LogInfo -Message "$totalFileProcessCount XML files has been processed." -Separator $true
+        Write-LogInfo -Message "$fileIssueCount XML files has not been processed." -Separator $true
     }
     End {
+
     }
 }
